@@ -2,7 +2,7 @@
 name = "Upgradable Walking Cane"
 description = "Recipe: Walking Cane + 1 Gear"
 author = "CrashBone"
-version = "1.0007"
+version = "1.0008"
 forumthread = ""
 api_version = 10
 icon_atlas = "modicon.xml"
@@ -22,7 +22,7 @@ configuration_options =
         name = "canemultiplier",
         label = "Speed Bonus (Standard Cane gives 25%)",
 		hover = "Recommended: 40%",
-        options = 
+        options =
         {
             {description = "35%", data = 1.35},
 			{description = "40% (Recommended)", data = 1.4},
