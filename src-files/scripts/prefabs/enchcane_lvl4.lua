@@ -1,8 +1,8 @@
 local assets={
-	Asset("ANIM", "anim/enchcane.zip"),
-	Asset("ANIM", "anim/swap_enchcane.zip"),
-	Asset("ATLAS", "images/inventoryimages/enchcane.xml"),
-	Asset("IMAGE", "images/inventoryimages/enchcane.tex"),
+	Asset("ANIM", "anim/enchcane_lvl4.zip"),
+	Asset("ANIM", "anim/swap_enchcane_lvl4.zip"),
+	Asset("ATLAS", "images/inventoryimages/enchcane_lvl4.xml"),
+	Asset("IMAGE", "images/inventoryimages/enchcane_lvl4.tex"),
 }
 
 prefabs = {}
@@ -10,7 +10,7 @@ prefabs = {}
 local function fn()
 
 	local function OnEquip(inst, owner)
-		owner.AnimState:OverrideSymbol("swap_object", "swap_enchcane", "swap_enchcane")
+		owner.AnimState:OverrideSymbol("swap_object", "swap_enchcane_lvl4", "swap_enchcane_lvl4")
 		owner.AnimState:Show("ARM_carry")
 		owner.AnimState:Hide("ARM_normal")
 	end
@@ -28,8 +28,8 @@ local function fn()
 
 
 
-	anim:SetBank("enchcane")
-	anim:SetBuild("enchcane")
+	anim:SetBank("enchcane_lvl4")
+	anim:SetBuild("enchcane_lvl4")
 	anim:PlayAnimation("idle")
 
 	inst.entity:AddNetwork()
@@ -46,15 +46,15 @@ local function fn()
 	inst:AddComponent("inspectable")
 
 	inst:AddComponent("inventoryitem")
-	inst.components.inventoryitem.atlasname = "images/inventoryimages/enchcane.xml"
-	inst.components.inventoryitem.imagename = "enchcane"
+	inst.components.inventoryitem.atlasname = "images/inventoryimages/enchcane_lvl4.xml"
+	inst.components.inventoryitem.imagename = "enchcane_lvl4"
 
 	inst:AddComponent("equippable")
 	inst.components.equippable:SetOnEquip( OnEquip )
 	inst.components.equippable:SetOnUnequip( OnUnequip )
-	inst.components.equippable.walkspeedmult = TUNING.ENCHCANE.SPEEDMULTIPLIER
+	inst.components.equippable.walkspeedmult = TUNING.ENCHCANE_LVL4.SPEEDMULTIPLIER
 
 	return inst
 end
 
-return  Prefab("common/inventory/enchcane", fn, assets, prefabs)
+return  Prefab("common/inventory/enchcane_lvl4", fn, assets, prefabs)

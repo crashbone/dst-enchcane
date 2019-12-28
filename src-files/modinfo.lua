@@ -1,8 +1,8 @@
 -- This information tells other players more about the mod
 name = "Upgradable Walking Cane"
-description = "Recipe: Walking Cane + 1 Gear"
+description = "WARNING!: Too much speed crashes the game. Don't make both options too high!\n\nMake an Upgradable Walking Cane with one gear, allows you to move faster. You can change speed bonus. Standard Walking Cane gives 25% speed boost.\n\n40%, 8% are recommended options.\n\nRecipes:\n(lvl 1) Cane: 1 Standard Walking Cane + 1 Gear\n(lvl 2) Cane: (lvl 1) Cane + 1 Blue Gem + 5 Gold\n(lvl 3) Cane: (lvl 2) Cane + 1 Blue Gem + 10 Gold\n(lvl 4 MAX) Cane: (lvl 3) Cane + 1 Red Gem + 20 Gold"
 author = "CrashBone"
-version = "1.0008"
+version = "1.101"
 forumthread = ""
 api_version = 10
 icon_atlas = "modicon.xml"
@@ -20,8 +20,8 @@ configuration_options =
 {
     {
         name = "canemultiplier",
-        label = "Speed Bonus (Standard Cane gives 25%)",
-		hover = "Recommended: 40%",
+        label = "lvl 1 Speed Bonus",
+		  hover = "Recommended: 40%",
         options =
         {
             {description = "35%", data = 1.35},
@@ -36,6 +36,25 @@ configuration_options =
 			{description = "100%", data = 2},
         },
         default = 1.4,
+    },
+    {
+        name = "extraoneachlvl",
+        label = "Extra bonus on each lvl",
+		  hover = "Recommended: 8%",
+        options =
+        {
+         {description = "5%", data = 0.05},
+         {description = "6%", data = 0.06},
+         {description = "7%", data = 0.07},
+			{description = "8% (Recommended)", data = 0.08},
+			{description = "10%", data = 0.1},
+			{description = "12%", data = 0.12},
+			{description = "15%", data = 0.15},
+			{description = "20%", data = 0.2},
+			{description = "25%", data = 0.25},
+         {description = "30%", data = 0.3},
+        },
+        default = 0.08,
     },
 }
 
