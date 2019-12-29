@@ -1,0 +1,9 @@
+2019/12/29 Change Notes:
+V1.1 Released
+- Added 3 new canes.
+- Misleading name "Enchanted Walking Cane" changed to "Upgradable Walking Cane"
+- Crafting of a cane requires a cane that is 1 level lower and some materials.
+- The 3 new canes look as following:
+==IMG==
+- You can adjust additional speed bonus that a walking cane gives on next level. 8% Recommended.
+- A bug causing cane icon missing on crafting menu is fixed.
