@@ -2,7 +2,7 @@
 name = "Upgradable Walking Cane"
 description = "WARNING!: Too much speed crashes the game. Don't make both options too high!\n\nMake an Upgradable Walking Cane with one gear, allows you to move faster. You can change speed bonus. Standard Walking Cane gives 25% speed boost.\n\n40%, 8% are recommended options.\n\nRecipes:\n(lvl 1) Cane: 1 Standard Walking Cane + 1 Gear\n(lvl 2) Cane: (lvl 1) Cane + 1 Blue Gem + 5 Gold\n(lvl 3) Cane: (lvl 2) Cane + 1 Blue Gem + 10 Gold\n(lvl 4 MAX) Cane: (lvl 3) Cane + 1 Red Gem + 20 Gold"
 author = "CrashBone"
-version = "1.101"
+version = "1.102"
 forumthread = ""
 api_version = 10
 icon_atlas = "modicon.xml"

@@ -15,19 +15,19 @@ local enchcane_datas = {
 		prefab = "enchcane_lvl2",
 		name = "(lvl 2) Upgradable Walking Cane",
 		desc = "Trot on with speed and poise.",
-		recipe = {{"bluegem", 1}, {"gold", 5}}
+		recipe = {{"bluegem", 1}, {"goldnugget", 5}}
 	},
 	{
 		prefab = "enchcane_lvl3",
 		name = "(lvl 3) Upgradable Walking Cane",
 		desc = "Trot on with speed and poise.",
-		recipe = {{"bluegem", 1}, {"gold", 10}}
+		recipe = {{"bluegem", 1}, {"goldnugget", 10}}
 	},
 	{
 		prefab = "enchcane_lvl4",
 		name = "(lvl 4 MAX) Upgradable Walking Cane",
 		desc = "Trot on with speed and poise.",
-		recipe = {{"redgem", 1}, {"gold", 20}}
+		recipe = {{"redgem", 1}, {"goldnugget", 20}}
 	}
 }
 
